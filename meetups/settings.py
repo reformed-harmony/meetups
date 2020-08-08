@@ -58,7 +58,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # Project apps
-    # ...
+    'ui',
 ]
 
 
@@ -124,9 +124,10 @@ MEDIA_URL = '/media/'
 STATIC_ROOT = '/srv/static/'
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    BASE_DIR / 'static',
-]
+if DEBUG:
+    STATICFILES_DIRS = [
+        BASE_DIR / 'static',
+    ]
 
 
 #############

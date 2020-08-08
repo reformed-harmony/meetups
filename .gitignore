@@ -1,3 +1,5 @@
 __pycache__/
 
+/ui/node_modules/
+/ui/static/
 /db.sqlite3
